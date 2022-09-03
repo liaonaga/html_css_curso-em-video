@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        /*Centralizar o conteúdo tanto horizontalmente quanto verticalmente na tela*/
+
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative; /* posição relativa não precisa escrever, mas apenas para lembrar que sempre será posição relativa*/
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            
+            position: absolute; 
+            height: 200px; 
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%); 
+            /*o conteudo é sempre deslocado considerando como ponto de partida o canto superior esquerdo (left top), 
+            então para que o centro do target do conteúdo (yellow) 
+            fique no centro do target do conteiner(purple), 
+            precisa considerar: 
+            - o centro do coteudo em relação ao left (-50%)
+            - e o centro do conteúdo em relação ao top (-50%)*/
+        }
+    </style>
+    
+</head>
+<body>
+    <section id="container">
+        <article id=conteudo>
+
+        </article>
+    </section>
+    
+</body>
+</html>
