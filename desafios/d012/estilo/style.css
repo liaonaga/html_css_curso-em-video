@@ -6,36 +6,42 @@
 * {
     margin: 0PX;
     padding: 0px;
+    font-size: 1em;
+}
+
+/*criando variáveis = root
+  vantagem de utilizar variáveis é que caso altere as fontes ou cores que forem definidas nas variáveis
+  depois para atualizatr só precisa modificar nas variáveis e não em cada tag (header, h1, h2, p...)*/
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
 }
 
 html, body {
     min-height: 100vh; /*vh = Viewport Heigh
                          vw = Viewport Width*/
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header {
     background-color: black;
     color: white;
-    font-family: 'Passion One';
     text-align: center;
     padding: 5px;
-
-
 }
 
 header > h1 {
     padding-top: 50px;
+    font-family: var(--fonte2);
     font-variant: small-caps;
-    font-size: 4em;
-    font-weight: bold;
+    font-size: 10vh; /*font-size: 4em;*/
 }
 
 
 header > p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8em;
-    text-decoration: none;
     padding-bottom: 50px;
+    font-size: 2.5vh;
 
 }
 
@@ -55,6 +61,8 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px; /*espaçamento da esquerda do texto*/
     line-height: 2em; /*epaçamento duplo(2em) entre as linhas*/
+    font-family: var(--fonte3);
+    font-size: 3vw;
 }
 
 section.normal {
@@ -68,7 +76,8 @@ section.imagem {
 }
 section.imagem > p {
     background-color: black;
-    width: 400px;
+    display: inline-block; /* poderia ser = width: 400px;  mas o width ajusta em uma medida exata
+    o display: inline-block ajusta conforme o bloco do parágrafo*/
     padding: 10px;
 }
 
@@ -77,4 +86,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-}
+}.
