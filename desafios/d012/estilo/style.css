@@ -87,6 +87,8 @@ section.imagem > p {
     padding: 10px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.42);
 }
+
+/*imagem parallax*/
 section#img01 {
     background-image: url('../imagens/background001.jpg');
     background-position: right center;
@@ -96,10 +98,12 @@ section#img02 {
     background-image: url('../imagens/background002.jpg');
     background-position: right center;
 }
+
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
     font-family: var(--fonte1);
+    font-size: .5em;
 }
