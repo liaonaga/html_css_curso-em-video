@@ -64,6 +64,9 @@ section {
     font-family: var(--fonte3);
     font-size: 3vw;
 }
+section > p {
+    padding-bottom: 2em;
+}
 
 section.normal {
     background-color: white;
@@ -73,17 +76,30 @@ section.normal {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.451);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.449);
+    background-size: cover;
+    background-attachment: fixed; /*fixar a imagem de fundo*/
 }
 section.imagem > p {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.323);
     display: inline-block; /* poderia ser = width: 400px;  mas o width ajusta em uma medida exata
     o display: inline-block ajusta conforme o bloco do parágrafo*/
     padding: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.42);
+}
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
 }
 
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
-}.
+    font-family: var(--fonte1);
+}
