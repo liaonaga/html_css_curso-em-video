@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eum ea quod repellat eveniet officia eligendi corporis. Nemo itaque illo minus doloribus, ipsa voluptatum, aspernatur ullam quas quisquam temporibus hic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae recusandae libero aliquam tenetur ut asperiores velit adipisci, vel eius! Quis recusandae, eveniet sunt accusantium odit incidunt quisquam cum eius fuga!</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eum ea quod repellat eveniet officia eligendi corporis. Nemo itaque illo minus doloribus, ipsa voluptatum, aspernatur ullam quas quisquam temporibus hic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae recusandae libero aliquam tenetur ut asperiores velit adipisci, vel eius! Quis recusandae, eveniet sunt accusantium odit incidunt quisquam cum eius fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit provident impedit aliquid repellat pariatur ad beatae magni velit ipsam est dolore qui exercitationem eum rerum totam, tempore necessitatibus, laboriosam doloribus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet odit aliquid quidem, nulla excepturi accusantium dolores quis animi repudiandae, architecto molestiae. Ex officia id temporibus ratione optio, omnis itaque deserunt!</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>">
+        Infelizmente seu navegador não é compatível com isso!
+    </iframe>
+
+    <iframe id="tela" name="frame2" srcdoc="<h1>Escolha uma das opções acima</h1><img src='imagens/pngfind.com-ponyo-png-6291284.png'>">
+        Infelizmente seu navegador não é compatível com isso!
+    </iframe>
+    
+</body>
+</html>
